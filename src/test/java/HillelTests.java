@@ -49,5 +49,12 @@ public class HillelTests extends BaseTest{
                .clickGuestLogInBtn()
                .checkMyProfile("My profile");
     }
+    @Test
+    public void checkGuestProfile() {
+        new MainPage().open()
+                .clickGuestLogInBtn()
+                .clickMyProfileBtn()
+                .checkMyProfileMenu();
+    }
 }
 
